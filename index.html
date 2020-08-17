@@ -4,27 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla Hangman</title>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="index.js" defer></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div id="app">
-        <div v-if="wrongGuesses.length >= maxNumWrongGuesses">You lost! The word
-        was {{word}}</div>
-        <div v-else-if="revealedWord == word">You won!</div>
-        <div v-else class="game">
-          <h1>
-            {{wrongGuesses.length}} / {{maxNumWrongGuesses}}
-          </h1>
-          <h2>{{revealedWord}}</h2>
-          <div class="alphabet">
-          	<button v-for="letter in alphabet" :key="letter" @click="guess(letter)">
-          	  {{ letter }}
-          	</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+  <body></body>
 </html>
