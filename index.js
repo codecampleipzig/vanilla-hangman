@@ -35,3 +35,14 @@ const computeRevealedWord = (word, correctGuesses) => {
     )
     .join("");
 };
+
+// Create a Vue Instance
+const app = new Vue({
+  // Configuration of Vue
+  // Pointing Vue to the right element in the HTML
+  el: "#app",
+  // data properties
+  data: {
+    message: "Hello Vue!",
+  },
+});
